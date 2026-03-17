@@ -13,6 +13,8 @@ export default defineConfig([
     'build/**',
     'coverage/**',
     '**/.config/',
+    'prisma.config.ts',
+    'generated/**',
   ]),
   prettier,
   {

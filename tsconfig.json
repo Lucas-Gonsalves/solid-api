@@ -9,7 +9,9 @@
     // See also https://aka.ms/tsconfig/module
     "module": "esnext",
     "moduleResolution": "bundler",
-    "target": "es2024",
+    "esModuleInterop": true,
+    "ignoreDeprecations": "5.0",
+    "target": "es2023",
     "types": [],
     "baseUrl": "./",
     "paths": {
