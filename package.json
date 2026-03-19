@@ -9,7 +9,9 @@
     "start": "node build/server.js",
     "build": "tsup src --out-dir build",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,8 @@
     "@eslint/js": "10.0.1",
     "@types/node": "25.5.0",
     "@types/pg": "8.18.0",
+    "@vitest/coverage-v8": "4.1.0",
+    "@vitest/ui": "4.1.0",
     "eslint": "10.0.3",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-prettier": "5.5.5",
