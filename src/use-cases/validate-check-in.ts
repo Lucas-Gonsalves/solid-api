@@ -3,8 +3,8 @@ import type { CheckIn } from 'generated/prisma/client'
 
 import type { CheckInsRepository } from '@/repositories/check-ins-repository'
 
-import { ResourceNotFoundError } from './errors/resource-not-found-error'
 import { LateCheckInValidationError } from './errors/late-checkin-validation-error'
+import { ResourceNotFoundError } from './errors/resource-not-found-error'
 
 interface ValidateCheckinUseCaseRequest {
   checkInId: string

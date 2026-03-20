@@ -2,9 +2,9 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
 import { InMemoryCheckInsRepository } from '@/repositories/in-memory/in-memory-check-ins-repository'
 
+import { LateCheckInValidationError } from './errors/late-checkin-validation-error'
 import { ResourceNotFoundError } from './errors/resource-not-found-error'
 import { ValidateCheckinUseCase } from './validate-check-in'
-import { LateCheckInValidationError } from './errors/late-checkin-validation-error'
 
 let checkInsRepository: InMemoryCheckInsRepository
 let sut: ValidateCheckinUseCase
