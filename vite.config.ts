@@ -20,6 +20,7 @@ export default defineConfig({
           name: 'e2e',
           dir: 'src/http/controllers',
           setupFiles: ['./vitest.e2e.setup.ts'],
+          fileParallelism: false,
         },
       },
     ],
