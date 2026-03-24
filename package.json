@@ -4,10 +4,11 @@
   "description": "Project dedicated to learn about the concepts of SOLID, design patterns, Docker, JWT tokens, and RBAC.",
   "main": "index.js",
   "scripts": {
+    "prebuild": "node --input-type=module -e \"import { rmSync } from 'node:fs'; rmSync('build', { recursive: true, force: true })\"",
     "dev": "tsx watch src/server.ts",
     "lint": "eslint --fix",
     "start": "node build/server.js",
-    "build": "tsup src --out-dir build",
+    "build": "tsup",
     "test": "vitest run --project unit",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
