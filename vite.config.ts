@@ -19,7 +19,8 @@ export default defineConfig({
         test: {
           name: 'e2e',
           dir: 'src/http/controllers',
-          setupFiles: ['./vitest.e2e.setup.ts'],
+          globalSetup: ['./vitest.e2e.ts'],
+          setupFiles: ['./vitest.e2e.ts'],
           fileParallelism: false,
         },
       },
